@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		
+		<div class="post">
+			<H2 class="title">
+				<% post.title %>
+			</H2>
+
+			<small class="meta">
+				<span class="author"> by <%= post.author %> -</span>
+				<em class="created_at"><%= post.created_at %> </em>
+			</small>
+			<p class="body"><%= post.body %></p>
+		</div>
+
+		<br />
+		<a href="/list_posts">Back To Posts</a>
+	</body>
+</html>
